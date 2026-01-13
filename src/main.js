@@ -9,24 +9,24 @@ const backgroundbEl = document.getElementById('background');
 
 
 redEl.addEventListener('click',()=>{
-  backgroundbEl.style.backgroundColor="red";
+ document.body.style.backgroundColor="red";
 
 })
 
 yellowEl.addEventListener('click',()=>{
-  backgroundbEl.style.backgroundColor="yellow";
+ document.body.style.backgroundColor="yellow";
 
 })
 greenEl.addEventListener('click',()=>{
-  backgroundbEl.style.backgroundColor="green";
+ document.body.style.backgroundColor="green";
 
 })
 blueEl.addEventListener('click',()=>{
-  backgroundbEl.style.backgroundColor="blue";
+ document.body.style.backgroundColor="blue";
 
 })
 orangeEl.addEventListener('click',()=>{
-  backgroundbEl.style.backgroundColor="orange";
+ document.body.style.backgroundColor="orange";
 
 })
 
@@ -37,7 +37,7 @@ let randomcolor =()=>{
   for (let i=0;i<6;i++){
     code += colorcodes[Math.floor(Math.random()*16)]
   }
- backgroundbEl.style.backgroundColor=code;
+ document.body.style.backgroundColor=code;
 }
 randomEl.addEventListener('click',randomcolor);
 
